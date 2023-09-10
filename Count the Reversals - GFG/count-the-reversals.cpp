@@ -49,10 +49,10 @@ int countRev (string s)
         st.pop();
         char first = st.top();
         st.pop();
-        if((first=='{' && second=='{') || (first=='}' && second=='}')){
+        if(first==second){
             cnt++;
         }
-        else if((first=='}' && second=='{')){
+        else{
             cnt = cnt+2;
         }
     }
